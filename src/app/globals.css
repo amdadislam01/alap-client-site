@@ -1,26 +1,146 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Design System Tokens */
+@theme {
+  --color-primary: #09637E;
+  --color-secondary: #088395;
+  --color-accent: #7AB2B2;
+  --color-bg-light: #EBF4F6;
+  --color-text-main: #1a3a44;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+  font-family: 'Inter', sans-serif;
 }
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  cursor: pointer;
+}
+
+/* Base UI Components and Utility Classes */
+.btn-primary {
+  background-color: #09637E;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #088395;
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary {
+  background-color: #7AB2B2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #088395;
+}
+
+.btn-secondary:active {
+  transform: scale(0.95);
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  border: 1px solid rgba(122, 178, 178, 0.2);
+  transition: shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(122, 178, 178, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  outline: none;
+  transition: all 0.3s;
+  font-size: 16px; /* 16px font prevents iOS from automatically zooming in on input focus */
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 2px rgba(9, 99, 126, 0.5);
+  background-color: white;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #09637E 0%, #088395 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #09637E 0%, #088395 100%);
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(122, 178, 178, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at bottom left, rgba(8, 131, 149, 0.05) 0%, transparent 50%);
+}
+
+.btn-premium {
+  @apply relative overflow-hidden transition-all duration-300 transform active:scale-95;
+  background: linear-gradient(135deg, #09637E 0%, #088395 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(9, 99, 126, 0.3);
+  cursor: pointer;
+}
+
+.btn-premium:hover {
+  box-shadow: 0 20px 25px -5px rgba(9, 99, 126, 0.4);
+  transform: translateY(-2px);
+}
+
+.section-padding {
+  @apply py-20 px-6;
+}
+
+/* Modernized scrollbar for a cleaner interface */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(122, 178, 178, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(122, 178, 178, 0.4);
+}
+
