@@ -9,6 +9,20 @@ ALAP is a state-of-the-art **Assignment & Learning Analytics Platform** designed
 
 ---
 
+## 🔑 Test Credentials
+
+For testing purposes, you can use the following accounts:
+
+### 👨‍🏫 Instructor Account
+- **Email**: `instructor@alap.com`
+- **Password**: `password123`
+
+### 🎓 Student Account
+- **Email**: `student@alap.com`
+- **Password**: `password123`
+
+---
+
 ## 🚀 AI Implementation: Google Gemini Integration
 
 The core strength of ALAP lies in its seamless integration with **Google Gemini AI**. We have implemented AI not just as a feature, but as a robust, context-aware engine that acts as a virtual teaching assistant for instructors and a progress catalyst for students.
