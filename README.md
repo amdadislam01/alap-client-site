@@ -65,6 +65,7 @@ We went beyond the basic requirements to implement several advanced "Bonus" feat
 - **Glassmorphic UI/UX**: A premium design system using Tailwind CSS 4 and Framer Motion for smooth, high-performance transitions and a modern "Glassmorphism" aesthetic.
 - **Real-time Status Sync**: Automated status badges and live-sync indicators that provide immediate visual feedback on the state of submissions.
 - **Context-Aware Modals**: Intelligent review modals that surface all relevant student data (notes, submission URLs, history) in a single, focused view.
+- **Floating AI Chatbot Assistant**: An interactive, persistent floating chatbot integrated seamlessly across the platform, offering immediate automated support with predefined Q&A and smooth animations.
 
 ---
 
