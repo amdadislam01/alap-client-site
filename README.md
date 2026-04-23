@@ -11,16 +11,34 @@ ALAP is a state-of-the-art **Assignment & Learning Analytics Platform** designed
 
 ## 🚀 AI Implementation: Google Gemini Integration
 
-The core strength of ALAP lies in its seamless integration with **Google Gemini AI**. We have implemented AI not just as a feature, but as a virtual teaching assistant.
+The core strength of ALAP lies in its seamless integration with **Google Gemini AI**. We have implemented AI not just as a feature, but as a robust, context-aware engine that acts as a virtual teaching assistant for instructors and a progress catalyst for students.
 
-### 1. Automated Feedback Generation
-Instructors can generate high-quality, constructive feedback for student submissions with a single click. The AI analyzes:
-- The student's submission notes.
-- Assignment requirements and difficulty level.
-- Historical performance data.
+### 🧠 How the AI Engine Works
 
-### 2. Intelligent Learning Analytics
-The platform doesn't just show charts; it interprets them. The **AI Insights** engine analyzes submission distributions and difficulty trends to provide instructors with actionable recommendations (e.g., identifying when a specific topic is too challenging for the majority of the class).
+Our AI implementation follows a sophisticated **Context-Aware Processing** workflow:
+
+1.  **Context Injection**: When an instructor requests AI assistance, the platform gathers multiple data points, including assignment requirements, student submission notes, and historical performance metrics.
+2.  **Prompt Engineering**: This raw data is fed into specialized, highly-engineered prompts designed to minimize hallucination and maximize pedagogical value.
+3.  **Real-time Processing**: Using the Google Gemini API, the platform processes these inputs in real-time, delivering insights within seconds.
+4.  **Structured Output Parsing**: The AI's responses are parsed and integrated directly into the UI, providing seamless transitions between automated and manual tasks.
+
+### 🛠️ Core AI Features in Detail
+
+#### 1. Automated Constructive Feedback
+Instructors can generate high-quality, personalized feedback for student submissions with a single click. The AI analyzes:
+- **Student Intent**: Interprets the submission notes to understand the student's approach and challenges.
+- **Requirement Matching**: Cross-references the submission with the original assignment difficulty and criteria.
+- **Actionable Advice**: Instead of generic praise, the AI provides specific "Next Steps" to help students improve.
+
+#### 2. Intelligent Assignment Refinement
+Creating a clear assignment is half the battle. Our **Assignment Refine** tool allows instructors to write a rough draft and let the AI:
+- **Optimize for Clarity**: Fixes ambiguous wording and structures requirements into logical sections.
+- **Align with Difficulty**: Suggests adjustments to ensure the task matches the intended "Beginner/Advanced" level.
+
+#### 3. AI-Driven Learning Analytics
+The platform doesn't just show charts; it interprets them. The **AI Insights** engine analyzes submission distributions to provide:
+- **Predictive Recommendations**: Identifies if a specific topic is consistently challenging for the class.
+- **Pedagogical Shifts**: Suggests when an instructor might need to provide additional resources or revisit a specific lecture topic.
 
 ---
 
