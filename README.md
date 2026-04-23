@@ -75,24 +75,24 @@ src/
 
 ## 🔑 API Endpoints
 
-### 🔐 Authentication
+###  Authentication
 - `POST /auth/register` - Register a new account (Student/Instructor)
 - `POST /auth/login` - Login and receive JWT access token
 
-### 📝 Assignments
+###  Assignments
 - `GET /assignments` - Retrieve all available assignments
 - `GET /assignments/:id` - Get detailed information for a specific assignment
 - `POST /assignments` - Create a new assignment (Instructor)
 - `POST /assignments/refine` - AI-powered assignment description optimization (Instructor)
 
-### 🚀 Submissions
+###  Submissions
 - `POST /submissions` - Submit an assignment project URL and notes (Student)
 - `GET /submissions/student` - View own submission history and feedback (Student)
 - `GET /submissions/instructor` - View all student submissions for review (Instructor)
 - `PATCH /submissions/:id` - Update submission status and add manual feedback (Instructor)
 - `POST /submissions/:id/ai-feedback` - Generate constructive AI feedback for a submission (Instructor)
 
-### 📊 Analytics
+###  Analytics
 - `GET /analytics/instructor` - Fetch platform-wide learning analytics and distributions (Instructor)
 
 ---
